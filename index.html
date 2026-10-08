@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>WEBPLUS | Diseño, desarrollo y mantenimiento web</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#f5f6fb;--card:#fff;--tx:#12082e;--mut:#555a72;--bd:#e1e3f0;--p:#8262e8;--b:#4aa5f0;--k:#000}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b0b12;--card:#16161f;--tx:#f2f2fa;--mut:#a7a9c0;--bd:#262634}}
+:root[data-theme="dark"]{--bg:#0b0b12;--card:#16161f;--tx:#f2f2fa;--mut:#a7a9c0;--bd:#262634}
+*,*:before,*:after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:Montserrat,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6}
+.w{max-width:1050px;margin:auto;padding:0 20px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);background:#000;z-index:9}
+nav .w{display:flex;justify-content:space-between;align-items:center;height:60px}
+.logo{color:#fff;font-weight:800;font-style:italic;letter-spacing:1px;font-size:1.25rem}
+nav a{color:#ddd;text-decoration:none;margin-left:18px;font-size:.88rem}
+@media(max-width:700px){nav .l{display:none}}
+.hero{background:#000;color:#fff;text-align:center;padding:90px 0;background-image:radial-gradient(circle at 50% 0,#3a2a78 0,#000 65%)}
+.hero h1{font-size:clamp(2.4rem,8vw,4.4rem);font-style:italic;letter-spacing:2px;margin:0}
+.hero p{max-width:640px;margin:16px auto 28px;color:#c9c9dc;font-size:1.1rem}
+.btn{display:inline-block;background:linear-gradient(90deg,var(--p),var(--b));color:#fff!important;padding:13px 26px;border-radius:99px;font-weight:700;text-decoration:none;border:0;cursor:pointer;font:inherit;font-weight:700}
+.btn.o{background:none;border:1px solid #888;margin-left:10px}
+section{padding:64px 0}
+h2{text-align:center;font-size:1.9rem;margin:0 0 8px;color:var(--tx)}
+.sub{text-align:center;color:var(--mut);max-width:580px;margin:0 auto 34px}
+.g{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.c{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:22px}
+.c h3{margin:4px 0 6px}.c p{margin:0;color:var(--mut);font-size:.94rem}
+.ic{font-size:1.7rem}
+.mvo .c{color:#fff;border:0;text-align:center}.mvo .c p{color:#fff}
+.mvo .c:nth-child(1){background:var(--p)}.mvo .c:nth-child(2){background:var(--b)}.mvo .c:nth-child(3){background:#000}
+.dark{background:#000;color:#fff}.dark h2{color:#fff}.dark .sub{color:#b5b5c8}
+.dark .c{background:#fff;color:#12082e;border:0}.dark .c p{color:#444}
+.chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.chip{background:var(--card);border:1px solid var(--bd);padding:8px 16px;border-radius:99px;font-size:.9rem}
+.chip b{color:var(--p)}
+.pr{position:relative}.pr.f{border:2px solid var(--p)}
+.tag{position:absolute;top:-12px;right:16px;background:var(--b);color:#00131f;font-size:.74rem;font-weight:700;padding:3px 10px;border-radius:99px}
+.price{font-size:2rem;font-weight:800;margin:6px 0}.price small{font-size:.85rem;font-weight:400;color:var(--mut)}
+.pr ul{list-style:none;padding:0;margin:14px 0 20px}.pr li{padding:4px 0;font-size:.92rem}.pr li:before{content:"✓ ";color:var(--p);font-weight:800}
+.pr .btn{display:block;text-align:center}.pr .btn.o{margin:0;color:var(--tx)!important;border-color:var(--bd)}
+.note{text-align:center;color:var(--mut);font-size:.84rem;margin-top:18px}
+.add{margin-top:30px}.add h3{text-align:center}
+form{max-width:520px;margin:auto;display:grid;gap:12px}
+input,select,textarea{font:inherit;padding:12px;border-radius:12px;border:1px solid var(--bd);background:var(--card);color:var(--tx);width:100%}
+#ok{display:none;text-align:center;color:var(--p);font-weight:700}
+footer{background:#000;color:#aaa;text-align:center;padding:28px 20px;font-size:.88rem}
+</style>
+</head>
+<body>
+<nav><div class="w"><div class="logo">WEBPLUS</div>
+<div class="l"><a href="#nosotros">Nosotros</a><a href="#servicios">Servicios</a><a href="#modelo">Cómo trabajamos</a><a href="#paquetes">Paquetes</a><a href="#contacto">Contacto</a></div></div></nav>
+
+<header class="hero"><div class="w">
+<h1>WEBPLUS</h1>
+<p>Diseño, desarrollo y mantenimiento de tu página web en un solo servicio. Sin necesidad de saber programación.</p>
+<a class="btn" href="#paquetes">Ver paquetes y precios</a><a class="btn o" href="#contacto">Pedir cotización</a>
+</div></header>
+
+<section id="nosotros"><div class="w">
+<h2>Quiénes somos</h2>
+<p class="sub">WebPlus es una empresa tecnológica de servicios dedicada al diseño y desarrollo de páginas web para personas y empresas, desde emprendedores hasta grandes compañías.</p>
+<div class="c" style="text-align:center;margin-bottom:22px"><h3 style="color:var(--p)">Propuesta de valor</h3><p>Cualquier negocio puede tener su propia página web sin conocimientos de programación: diseño, desarrollo y mantenimiento en un solo servicio.</p></div>
+<div class="g mvo">
+<div class="c"><h3>Misión</h3><p>Ser una empresa reconocida por ofrecer páginas web de calidad y ayudar a diferentes negocios a crecer en internet.</p></div>
+<div class="c"><h3>Visión</h3><p>Ser una empresa reconocida por ofrecer páginas web de calidad y ayudar a diferentes negocios a crecer en internet.</p></div>
+<div class="c"><h3>Objetivo</h3><p>Crear páginas web funcionales y atractivas que ayuden a nuestros clientes a promocionar sus negocios y llegar a más personas.</p></div>
+</div></div></section>
+
+<section id="servicios" class="dark"><div class="w">
+<h2>Nuestros servicios</h2><p class="sub">Todo lo que tu negocio necesita para estar y crecer en internet.</p>
+<div class="g">
+<div class="c"><div class="ic">💻</div><h3>Creación de páginas web</h3><p>Sitios personalizados y funcionales para tu marca.</p></div>
+<div class="c"><div class="ic">🛒</div><h3>Tiendas virtuales</h3><p>Vende en línea con un catálogo atractivo y fácil de usar.</p></div>
+<div class="c"><div class="ic">🏢</div><h3>Páginas para empresas</h3><p>Sitios corporativos profesionales para grandes y medianas empresas.</p></div>
+<div class="c"><div class="ic">🛠️</div><h3>Mantenimiento</h3><p>Mantenemos tu página al día, segura y funcionando.</p></div>
+<div class="c"><div class="ic">✏️</div><h3>Actualización de contenido</h3><p>Cambiamos textos, imágenes y productos cuando lo necesites.</p></div>
+<div class="c"><div class="ic">🎧</div><h3>Soporte técnico</h3><p>Te acompañamos para resolver cualquier inconveniente.</p></div>
+</div></div></section>
+
+<section id="modelo"><div class="w">
+<h2>Cómo te ayudamos</h2><p class="sub">Entendemos el reto de tener presencia en línea sin recursos técnicos.</p>
+<div class="g">
+<div class="c"><h3 style="color:var(--p)">El problema</h3><p>Muchos negocios, emprendedores y profesionales necesitan presencia en internet, pero no tienen conocimientos de programación ni recursos para crear y mantener una página web.</p></div>
+<div class="c"><h3 style="color:var(--b)">Nuestra solución</h3><p>Diseñamos y desarrollamos páginas web personalizadas y ofrecemos mantenimiento, actualización de contenido y soporte técnico.</p></div>
+<div class="c"><h3 style="color:var(--p)">¿Para quién?</h3><p>Tiendas, restaurantes, emprendedores, pequeñas empresas y profesionales independientes, además de grandes empresas.</p></div>
+<div class="c"><h3 style="color:var(--b)">Canales</h3><p>Contacto directo con clientes, portafolio de páginas web, publicidad y redes sociales.</p></div>
+</div></div></section>
+
+<section class="dark"><div class="w">
+<h2>Un equipo por áreas</h2><p class="sub">Cada proyecto es atendido por especialistas, bajo la dirección de la Gerencia General.</p>
+<div class="chips" style="color:#12082e">
+<span class="chip"><b>Diseño:</b> UI/UX · Gráfico y de marca</span>
+<span class="chip"><b>Desarrollo:</b> Frontend · Backend · Pruebas y calidad (QA)</span>
+<span class="chip"><b>Atención al cliente:</b> Preventa · Postventa y soporte</span>
+<span class="chip"><b>Financiera:</b> Contabilidad · Facturación y presupuesto</span>
+<span class="chip"><b>Legal:</b> Contratos · Cumplimiento normativo</span>
+<span class="chip"><b>Talento humano:</b> Selección · Nómina · Capacitación</span>
+<span class="chip"><b>Seguridad y salud:</b> Seguridad laboral · Salud ocupacional</span>
+</div></div></section>
+
+<section id="paquetes"><div class="w">
+<h2>Paquetes y precios</h2><p class="sub">Elige según el tamaño y las necesidades de tu negocio. Todos incluyen diseño y desarrollo.</p>
+<div class="g">
+<div class="c pr"><h3>Emprendedor</h3><p>Para empezar tu presencia en línea.</p><div class="price">$250 <small>USD</small></div>
+<ul><li>Landing page de una sección</li><li>Diseño responsive</li><li>Botón de WhatsApp y formulario</li><li>Entrega en 5 días</li><li>Soporte técnico por 15 días</li></ul><a class="btn o" href="#contacto">Elegir</a></div>
+<div class="c pr"><h3>Negocio</h3><p>Para pequeñas empresas y profesionales.</p><div class="price">$600 <small>USD</small></div>
+<ul><li>Sitio de hasta 5 páginas</li><li>Diseño personalizado</li><li>Redes sociales y mapa</li><li>Mantenimiento por 1 mes</li><li>Actualización de contenido básica</li></ul><a class="btn o" href="#contacto">Elegir</a></div>
+<div class="c pr f"><span class="tag">Más pedido</span><h3>Tienda virtual</h3><p>Vende tus productos las 24 horas.</p><div class="price">$900 <small>USD</small></div>
+<ul><li>Catálogo y carrito de compras</li><li>Pasarela de pagos</li><li>Panel para gestionar productos</li><li>Mantenimiento por 2 meses</li><li>Soporte técnico prioritario</li></ul><a class="btn" href="#contacto">Elegir</a></div>
+<div class="c pr"><h3>Empresarial</h3><p>Para grandes empresas y proyectos a medida.</p><div class="price">Desde $1,800 <small>USD</small></div>
+<ul><li>Sitio corporativo a la medida</li><li>Páginas y funciones ilimitadas</li><li>Integración con tus sistemas</li><li>Pruebas de calidad (QA)</li><li>Contrato de mantenimiento y soporte</li></ul><a class="btn o" href="#contacto">Cotizar</a></div>
+</div>
+<div class="add"><h3>Servicios complementarios</h3>
+<div class="chips"><span class="chip">Mantenimiento mensual · <b>desde $40</b></span><span class="chip">Actualización de contenido · <b>desde $20</b></span><span class="chip">Soporte técnico · <b>desde $25</b></span></div></div>
+<p class="note">* Precios de referencia en USD. Cada proyecto se cotiza según sus necesidades.</p>
+</div></section>
+
+<section id="contacto" class="dark"><div class="w">
+<h2>Hablemos de tu proyecto</h2><p class="sub">Cuéntanos qué necesitas y te enviamos una cotización.</p>
+<form onsubmit="event.preventDefault();document.getElementById('ok').style.display='block';this.reset()">
+<input required placeholder="Nombre">
+<input required type="email" placeholder="Correo electrónico">
+<select><option>Emprendedor</option><option>Negocio</option><option>Tienda virtual</option><option>Empresarial</option></select>
+<textarea rows="4" placeholder="Cuéntanos sobre tu proyecto"></textarea>
+<button class="btn" type="submit">Enviar solicitud</button>
+<div id="ok">¡Gracias! Te contactaremos pronto.</div>
+</form></div></section>
+
+<footer>© 2026 WEBPLUS · Diseño, desarrollo y mantenimiento web</footer>
+</body>
+</html>
